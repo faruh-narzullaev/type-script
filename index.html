@@ -36,7 +36,7 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>
+				<section data-background="#265dc7">
 					<h1>TypeScript</h1>
 				</section>
 
@@ -50,7 +50,7 @@
 				</section>
 
                 <section>
-                    <h2>2009 Coffee Script</h2>
+                    <h2>CoffeeScript (2009)</h2>
                     <ul>
                         <li><h3>Rails</h3></li>
                         <li><h3>DropBox</h3></li>
@@ -58,31 +58,49 @@
                     </ul>
                 </section>
 
-				<section>
-					<h2>Coffee Script</h2>
-
-                    <div class="col-6">
+				<section id="coffeescript-sample">
+					<h2>CoffeeScript</h2>
 <pre><code data-trim data-noescape class="javascript">
-function showApplesCount() {
-    var apples = 5;
-    if (true) {
-        var apples = 10;
-        alert(apples); // 10
-    }
-    alert(apples); // 10
-}
+square = (x) -> x * x
+
+eat food for food in ['toast', 'bread']
+
+class HondaAccord extends Car
+	engine: 'v6'
+	move: ->
+	  alert 'Driving...'
+	  super 10
 </code></pre>
-                    </div>
+<table>
+	<tr>
+		<td>
+		<h4>Плюсы:</h4>
+			<ul>
+				<li>Короткий синтаксис</li>
+				<li>Совместим с JavaScript кодом</li>
+				<li>Много новых конструкций</li>
+			</ul>
+		</td>
+		<td>
+			<h4>Минусы:</h4>
+			<ul>
+				<li>Не стал проще</li>
+				<li>Генерит непонятный JS код</li>
+				<li>Не совместим с ES6</li>
+				<li>Свой синтаксис</li>
+			</ul>
+		</td>
+	</tr>
+</table>
 				</section>
 
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
+				<section id="dart-2011">
+					<h2>Google Dart (2011)</h2>
+					<ul>
+                        <li><h3>Google</h3></li>
+                        <li><h3>Blossom</h3></li>
+                        <li><h3>Quire</h3></li>
+                    </ul>
 				</section>
 
 				<section>

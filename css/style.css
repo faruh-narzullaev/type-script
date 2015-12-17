@@ -6,3 +6,16 @@
 pre {
     font-family: "Source Sans Pro", Helvetica, sans-serif !important;
 }
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+	text-transform: none !important;
+}
+
+#coffeescript-sample ul {
+	margin: 0;
+	padding: 0;
+}
+
+#coffeescript-sample ul li {
+	font-size: 20px;
+}
