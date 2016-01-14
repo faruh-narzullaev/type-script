@@ -1,9 +1,14 @@
-var Color;
-(function (Color) {
-    Color[Color["Red"] = 1] = "Red";
-    Color[Color["Green"] = 2] = "Green";
-    Color[Color["Blue"] = 3] = "Blue";
-})(Color || (Color = {}));
+var Foo = (function () {
+    function Foo() {
+    }
+    Foo.prototype.save = function (callback) {
+        callback(42);
+    };
+    return Foo;
+})();
+var foo = new Foo();
+foo.save(, 5);
+{
+    return "string";
+}
 ;
-var colorName = Color[2];
-console.log(colorName);

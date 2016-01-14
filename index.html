@@ -38,6 +38,7 @@
 			<div class="slides">
 				<section id="type-script" data-background="#265dc7">
 					<h1>TypeScript</h1>
+					<span></span>
 				</section>
 
 				<section id="big-javascript-apps">
@@ -59,7 +60,7 @@
                 </section>
 
 				<section id="coffee-script-samples">
-					<h2>CoffeeScript (samples)</h2>
+					<h2>CoffeeScript</h2>
 					<img src="images/coffee/2.png" alt="coffee script samples">
 					<table>
 						<tr>
@@ -94,7 +95,7 @@
 				</section>
 
 				<section id="dart-samples">
-					<h2>Dart (samples)</h2>
+					<h2>Dart</h2>
 					<img src="images/dart/2.png" alt="dart samples">
 					<table>
                         <tr>
@@ -138,7 +139,6 @@
                     <h2>Microsoft TypeScript (2012)</h2>
                     <img src="images/typescript/Anders-Hejlsberg.jpg" alt="Anders Hejlsberg">
                     <p>Андерс Хейлсберг</p>
-                    <!-- <pre><code>npm install -g typescript</code></pre> -->
 				</section>
 
 				<section id="type-script-features">
@@ -175,8 +175,8 @@
 					<h2>TypeScript Development</h2>
 					<img src="images/typescript/simple-function.png" alt="Simple JavaScript/TypeScript function">
 					<ul>
-						<li>EcmaScript specification</li>
-						<li>Data Types</li>
+						<li>Спецификация EcmaScript</li>
+						<li>Типы данных</li>
 					</ul>
 				</section>
 
@@ -195,56 +195,91 @@
                 	<img src="images/typescript/enum.png" alt="Enum">
                 </section>
 
-                <section id="interfaces-classes">
-                    <h2>Interfaces</h2>
-                    <p>Inheritance</p>
-                    <img src="images/typescript/interface-classes.png" alt="Interfaces">
-                </section>
-
-                <section id="interfaces-function">
-                    <h2>Interfaces</h2>
-                    <p>Without class</p>
-                    <img src="images/typescript/interface.png" alt="Interfaces">
+                <section id="interfaces-1">
+                	<h2>Interfaces</h2>
+                	<img src="images/typescript/interface-1.png" alt="Interfaces">
                 </section>
 
                 <section id="interfaces-optional-params">
-                    <h2>Interfaces</h2>
-                    <p>Optional Properties</p>
-                    <img src="images/typescript/interface-optional-params.png" alt="Interfaces, optional parameters">
+                    <h2>Interfaces <span style="font-size: 15px !important;">(Optional Properties)</span></h2>
+                    <img src="images/typescript/interface-2.png" alt="Interfaces, optional parameters">
+                    <pre><code>Argument of type '{ text: string; }' is not assignable to parameter of type 'ButtonSettings' interface. Property 'color' is missing in type '{ text: string; }'.</code></pre>
                 </section>
 
                 <section id="interfaces-typed-functions">
-                    <h2>Interfaces</h2>
-                    <p>Typed Functions</p>
-                    <img src="images/typescript/typed-functions.png" alt="Typed functions">
+                    <h2>Interfaces <span style="font-size: 15px !important;">(Typed Functions)</span></h2>
+                    <img src="images/typescript/interface-3.png" alt="Typed functions">
                 </section>
 
                 <section id="interfaces-typed-arrays">
-                    <h2>Interfaces</h2>
-                    <p>Typed Arrays</p>
-                    <img src="images/typescript/typed-arrays.png" alt="Typed arrays">
+                    <h2>Interfaces <span style="font-size: 15px !important;">(Typed Arrays)</span></h2>
+                    <img src="images/typescript/interface-4.png" alt="Typed arrays">
+                </section>
+
+                <section id="interfaces-classes">
+                    <h2>Interfaces <span style="font-size: 15px !important;">(Typed Classes)</span></h2>
+                    <img src="images/typescript/interface-classes.png" alt="Interfaces">
+                </section>
+
+                <section id="interfaces-extending">
+                	<h2>Interfaces <span style="font-size: 15px !important;">(Extending Interfaces)</span></h2>
+                    <img src="images/typescript/interface-5.png" alt="Extending Interfaces">
+                </section>
+
+                <section id="interfaces-extending">
+                	<h2>Interfaces <span style="font-size: 15px !important;">(Hybrid Types)</span></h2>
+                    <img src="images/typescript/interface-6.png" alt="Hybrid Types">
                 </section>
 
 				<section id="type-script-abstract-classes">
-                    <h2>Abstract Class</h2>
+                    <h2>Abstract Classes <span style="font-size: 15px !important;">(Access modifiers)</span></h2>
                     <img src="images/typescript/abstract-classes.png" alt="Abstract Classes">
 				</section>
 
-                <section id="class-modifiers">
-                    <h2>Access modifiers</h2>
-                    <p>public, protected, and private</p>
-                    <img src="images/typescript/modificators.png" alt="Access modifiers">
-                </section>
-
-                <section>
+                <section id="method-overloading">
                     <h2>Overloads</h2>
-                    <img src="images/typescript/method-overloading.png" alt="">
+                    <img src="images/typescript/method-overloading.png" alt="Overloads">
                 </section>
 
                 <section id="generics">
-                    <h2>Generics</h2>
-
+                    <h2>Generics <span style="font-size: 15px !important;">(Functions/Classes)</span></h2>
+                	<img src="images/typescript/generics-1.png" alt="Generic Classes">
                 </section>
+
+                <section id="generics-advanced-sample-1">
+                    <h2>Generics <span style="font-size: 15px !important;">(Constraints)</span></h2>
+                	<img src="images/typescript/generics-2.png" alt="Generic Constraints">
+                	<ul class="sub-ul">
+                		<li>Функция или класс работает с определенным диапозоном типов данных.</li>
+                	</ul>
+                </section>
+
+                <section id="generics-advanced-sample-2">
+                    <h2>Generics <span style="font-size: 15px !important;">(Constraints)</span></h2>
+                	<img src="images/typescript/generics-3.png" alt="Generic Constraints">
+                	<ul class="sub-ul">
+                		<li>Функция или класс использует обобщенный тип данных в нескольких местах.</li>
+                	</ul>
+                </section>
+
+            	<section id="decorators">
+            		<h2>Decorators</h2>
+            		<p>Это обычная функция которая модифицирует класс, свойсвто, метод или параметер метода.</p>
+            	</section>
+
+            	<section id="decorators-sample">
+            		<h2>Decorators</h2>
+            		<img src="images/typescript/decorator-1.png" alt="Decorators">
+            	</section>
+
+            	<section id="decorators-sample">
+            		<h2>Decorators <span style="font-size: 15px !important;">(sample)</span></h2>
+            		<img src="images/typescript/decorator-2.png" alt="Decorators">
+            	</section>
+
+            	<section id="async-await">
+            		<h2>Async/Await <span style="font-size: 15px !important;">(From ES7)</span></h2>
+            	</section>
 			</div>
 		</div>
 

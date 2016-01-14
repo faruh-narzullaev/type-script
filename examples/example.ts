@@ -1,12 +1,39 @@
-// Enums begin numbering their members starting at 0
-enum Color {Red, Green, Blue};
-var color: Color = Color.Green;
+function ClassDecorator(target: Function) { // The class the decorator is declared on
+	console.log('ClassDecorator called on: ', target);
+}
 
-// Manually set all the values in the enum
-enum Size {Small = 1, Medium = 2, Big = 4};
-var size: Size = Size.Medium;
+@ClassDecorator
+class ClassDecoratorExample {
 
-// Go from a numeric value to the name of that value in the enum
-enum Font {Arial = 1, Verdana, Sans};
-var fontName: string = Font[2]; // Verdana
+}
 
+
+
+
+
+
+
+
+
+// function readonly<T extends Function>(Target: T): T {
+//     let newConstructor = function() {
+//         Target.apply(this);
+//         Object.freeze(this);
+//     };
+
+//     newConstructor.prototype = Object.create(Target.prototype);
+//     newConstructor.prototype.constructor = Target;
+
+//     return <any>newConstructor;
+// }
+
+// @readonly
+// class Person {
+//     name: string;
+//     isAdmin: boolean;
+
+//     constructor(name: string, admin: boolean) {
+//         this.name = name;
+//         this.isAdmin = admin;
+//     }
+// }
