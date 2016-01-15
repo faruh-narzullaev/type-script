@@ -1,15 +1,36 @@
+body {
+    font-family: 'Roboto', sans-serif !important;
+}
+
 .col-6 {
     float: left;
     width: 50%;
 }
 
-pre {
-    font-family: "Source Sans Pro", Helvetica, sans-serif !important;
+.reveal p,
+.reveal ul li {
+    font-size: 30px !important;
 }
 
 .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
 	text-transform: none !important;
     margin: 0 !important;
+}
+
+.reveal h1 {
+  font-size: 2.5em; 
+}
+
+.reveal h2 {
+  font-size: 1.6em; 
+}
+
+.reveal h3 {
+  font-size: 1.3em; 
+}
+
+.reveal h4 {
+  font-size: 1em; 
 }
 
 #coffee-script-samples ul, #dart-samples ul {
