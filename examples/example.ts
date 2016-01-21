@@ -1,12 +1,11 @@
-function ClassDecorator(target: Function) { // The class the decorator is declared on
-	console.log('ClassDecorator called on: ', target);
-}
+// Enums begin numbering their members starting at 0
+enum Color { Red = 1, Green = 4, Blue = 15 };
 
-@ClassDecorator
-class ClassDecoratorExample {
+var color: Color = Color.Green;
+console.log(color); // 4
 
-}
-
+var colorName: string = Color[15];
+console.log(colorName); // Blue
 
 
 
