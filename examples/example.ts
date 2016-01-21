@@ -1,18 +1,20 @@
-// Enums begin numbering their members starting at 0
-enum Color { Red = 1, Green = 4, Blue = 15 };
+var average: number = calculateAverage([
+	{ name: "Peter", age: 65 },
+	{ name: "John", age: 32 }
+]);
 
-var color: Color = Color.Green;
-console.log(color); // 4
+interface Human {
+	name: string;
+	age: number;
+}
 
-var colorName: string = Color[15];
-console.log(colorName); // Blue
+function calculateAverage<T extends Human>(eployers: T[]): number {
+	var averageAge: number;
+	var average: T[] = eployers.filter(c => c.age == averageAge);
+	return 32; // dummy average
+}
 
-
-
-
-
-
-
+// синонимы типов
 
 // function readonly<T extends Function>(Target: T): T {
 //     let newConstructor = function() {
