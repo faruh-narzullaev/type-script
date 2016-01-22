@@ -1,18 +1,8 @@
-var average: number = calculateAverage([
-	{ name: "Peter", age: 65 },
-	{ name: "John", age: 32 }
-]);
+type MyCustomArray = Array<string | number | boolean>;
+type MyCustomNumber = number;
 
-interface Human {
-	name: string;
-	age: number;
-}
-
-function calculateAverage<T extends Human>(eployers: T[]): number {
-	var averageAge: number;
-	var average: T[] = eployers.filter(c => c.age == averageAge);
-	return 32; // dummy average
-}
+var age: MyCustomNumber = 28;
+var arr: MyCustomArray  = ["string", 5, false];
 
 // синонимы типов
 
